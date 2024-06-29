@@ -19,29 +19,33 @@ html {
   --para-text: "Open Sans", sans-serif;
 }
 
-.typewriter {
-  font-family: var(--typewriter-text);
-  font-size: 40px;
+/* Typography */
+h1,
+h2,
+h3 {
+  font-family: var(--heading-text);
 }
 
 h1 {
-  font-family: var(--heading-text);
   font-size: 64px;
 }
 
 h2 {
-  font-family: var(--heading-text);
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h3 {
-  font-family: var(--heading-text);
-  font-size: 20px;
+  font-size: 30px;
 }
 
 p {
   font-family: var(--para-text);
   font-size: 16px;
+}
+
+.typewriter {
+  font-family: var(--typewriter-text);
+  font-size: 40px;
 }
 
 /* Navbar Styling */
@@ -75,6 +79,7 @@ p {
   font-family: var(--heading-text);
   font-size: 30px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .full-stop {
@@ -99,7 +104,22 @@ p {
 
 .nav-item a:hover {
   cursor: pointer;
-  text-decoration: underline solid #feed00 5px;
+  text-decoration: underline solid var(--accent-color) 5px;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
 /* Welcome Section Styling */
@@ -132,7 +152,7 @@ p {
 .contact-links .btn {
   margin: 10px;
   text-decoration: none;
-  color: #000000;
+  color: var(--primary-color);
   font-size: 20px;
   letter-spacing: 1px;
   padding: 10px 20px;
@@ -212,14 +232,12 @@ p {
 }
 
 #about-section p {
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 20px;
-}
-#about-section p:last-child {
-  margin-bottom: 0; /* Remove bottom margin from the last paragraph */
 }
 
 #about-section p:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last paragraph */
   font-style: italic;
 }
 
@@ -300,7 +318,7 @@ p {
 .btn-link {
   margin: 30px 0 0 0;
   text-decoration: none;
-  color: #000000;
+  color: var(--primary-color);
   font-size: 20px;
   letter-spacing: 1px;
   padding: 10px 20px;
@@ -325,7 +343,7 @@ p {
 /* Contact Section Styling */
 .contact-section {
   background-color: #f9f9f9;
-  padding: 50px;
+  padding: 60px;
   text-align: center;
   color: var(--primary-color);
 }
@@ -341,23 +359,17 @@ p {
 }
 
 .contact-links .contact {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Gap between buttons */
-  flex-wrap: wrap; /* Allow buttons to wrap */
-}
-
-.contact-links .contact {
-  display: inline-block;
   margin: 10px;
   text-decoration: none;
-  color: #000000;
+  color: var(--primary-color);
   font-size: 20px;
   letter-spacing: 1px;
   padding: 10px 20px;
   background: var(--secondary-color);
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  gap: 30px;
 }
 
 .contact-links .contact:hover {
@@ -380,4 +392,159 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Media queries */
+@media only screen and (max-width: 900px) {
+  /* Navbar Styling */
+
+  .nav-logo {
+    font-size: 22px;
+  }
+
+  .nav-item a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* Hamburger Menu Display */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+  }
+  .nav-list.active {
+    left: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-item a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Typography */
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .typewriter {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  /* Welcome Section Styling */
+  #welcome-section {
+    padding: 20px 10px;
+  }
+
+  .scroll-icon {
+    font-size: 24px;
+  }
+
+  .contact-links .hero-para {
+    margin: 30px 20px;
+    font-size: 14px;
+  }
+
+  .emoji {
+    font-size: 24px;
+  }
+
+  .scroll-text {
+    margin-top: 60px;
+    letter-spacing: 1px;
+  }
+
+  /* About Section Styling */
+  #about-section {
+    padding: 20px;
+  }
+
+  .tags {
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  /* Projects Styling */
+  .projects {
+    padding: 30px;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .project-details {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .project-icons {
+    justify-content: center;
+  }
+  .project-image-container {
+    margin-top: 20px;
+  }
+  .project-image {
+    max-width: 90%;
+  }
+
+  .btn-link {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  /* Contact Section Styling */
+  .contact-section {
+    padding: 30px;
+  }
+
+  .contact-links .contact {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  /* Footer Styling */
+  footer p {
+    font-size: 12px;
+    padding: 5px 0;
+  }
 }
