@@ -5,12 +5,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: #242424;
   --secondary-color: #ff65be;
   --accent-color: #feed00;
-  --btn-color: #8e44ad;
-  --btn-hover-color: #6c3483;
   --text-color: #ffffff;
   --heading-text: "Oswald", sans-serif;
   --typewriter-text: "Courier Prime", monospace;
@@ -169,4 +171,58 @@ p {
 .scroll-text {
   margin-top: 150px;
   letter-spacing: 1px;
+}
+
+/* About Section Styling */
+
+#about-section {
+  background-color: #f0f0f0;
+  padding: 50px;
+  text-align: left;
+}
+
+#about-section h2 {
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  text-decoration: underline solid var(--secondary-color) 5px;
+  letter-spacing: 1px;
+}
+
+.tags {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags li {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 20px;
+}
+
+#about-section h3 {
+  color: var(--primary-color);
+  text-decoration: underline solid var(--secondary-color) 5px;
+  margin: 40px 0 20px 0;
+}
+
+#about-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+#about-section p:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last paragraph */
+}
+
+#about-section p:last-child {
+  font-style: italic;
+}
+
+.fun-fact {
+  font-weight: bold;
 }
