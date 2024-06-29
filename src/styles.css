@@ -122,6 +122,11 @@ p {
   transition: 0.4s;
 }
 
+/* Active Hamburger (Open) */
+.hamburger.active .bar {
+  background-color: var(--accent-color); /* Change color to accent color */
+}
+
 /* Welcome Section Styling */
 
 #welcome-section {
@@ -407,7 +412,7 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   /* Hamburger Menu Display */
   .hamburger {
     display: flex;
@@ -424,6 +429,7 @@ footer a:hover {
     padding: 20px;
     transition: left 0.3s ease-in-out;
   }
+
   .nav-list.active {
     left: 0;
   }
@@ -438,6 +444,12 @@ footer a:hover {
     width: 100%;
     padding: 10px 20px;
     box-sizing: border-box;
+  }
+
+  /* Typography */
+  .typewriter {
+    font-size: 20px;
+    margin: 10px;
   }
 }
 
@@ -457,11 +469,6 @@ footer a:hover {
 
   p {
     font-size: 16px;
-  }
-
-  .typewriter {
-    font-size: 20px;
-    margin: 10px;
   }
 
   /* Welcome Section Styling */
