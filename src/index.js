@@ -7,7 +7,7 @@ const typewriter = new Typewriter("#typewriter", {
 });
 
 typewriter
-  .typeString("Learning Technologist")
+  .typeString("I'm a Learning Technologist")
   .pauseFor(1000)
   .deleteAll()
   .typeString("Front-end developer")
@@ -19,7 +19,7 @@ typewriter
   .typeString("UX UI designer")
   .pauseFor(1000)
   .deleteAll()
-  .typeString("From the United Kingdom")
+  .typeString("from the United Kingdom.")
   .pauseFor(1000)
   .deleteAll()
   .start();

@@ -1,0 +1,42 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #242424;
+  --secondary-color: #ff65be;
+  --accent-color: #feed00;
+  --btn-color: #8e44ad;
+  --btn-hover-color: #6c3483;
+  --heading-text: "Oswald", sans-serif;
+  --typewriter-text: "Courier Prime", monospace;
+  --para-text: "Open Sans", sans-serif;
+}
+
+.typewriter {
+  font-family: var(--typewriter-text);
+  font-size: 40px;
+}
+
+h1 {
+  font-family: var(--heading-text);
+  font-size: 80px;
+}
+
+h2 {
+  font-family: var(--heading-text);
+  font-size: 30px;
+}
+
+h3 {
+  font-family: var(--heading-text);
+  font-size: 20px;
+}
+
+p {
+  font-family: var(--para-text);
+  font-size: 16px;
+}

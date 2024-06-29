@@ -7,11 +7,17 @@
       name="description"
       content="Project portfolio by Nicole Baylis, a front-end developer based in the UK. Nicole is looking for new opportunities"
     />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <script
       src="https://kit.fontawesome.com/9ca11de569.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Front-end developer - Nicole Baylis</title>
   </head>
@@ -19,19 +25,19 @@
     <!-- NAVBAR -->
     <nav id="navbar" class="nav">
       <ul class="nav-list">
-        <li>
+        <li class="nav-item logo">
           <img src="" alt="Logo" class="nav-logo" />
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#welcome-section">Home</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#about-section">About</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#projects">Projects</a>
         </li>
-        <li>
+        <li class="nav-item">
           <a href="#contact">Contact</a>
         </li>
       </ul>
@@ -40,7 +46,7 @@
     <!-- WELCOME SECTION -->
     <section id="welcome-section">
       <h1>Hi, I'm Nicole</h1>
-      <h2 id="typewriter"></h2>
+      <h2 id="typewriter" class="typewriter"></h2>
 
       <div class="contact-links">
         <a
