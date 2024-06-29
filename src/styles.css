@@ -226,3 +226,98 @@ p {
 .fun-fact {
   font-weight: bold;
 }
+
+/* Projects Styling */
+
+.projects {
+  padding: 50px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+.project-details {
+  flex: 1; /* Take up remaining space */
+  margin-right: 20px;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-title .name {
+  color: var(--secondary-color);
+}
+
+.description {
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.project-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.project-icons a {
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+
+.project-icons a:hover {
+  color: var(--accent-color);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.project-image-container {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.btn-link {
+  margin: 30px 0 0 0;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: var(--accent-color);
+}
+
+.btn-link i {
+  margin-left: 10px; /* Space between text and icon */
+}
+
+.btn-link i.fas {
+  font-size: 18px;
+  margin-left: 5px;
+}
