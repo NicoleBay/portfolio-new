@@ -346,6 +346,11 @@ p {
   margin-left: 5px;
 }
 
+.strong-bonus,
+.hint {
+  color: var(--secondary-color);
+}
+
 /* Contact Section Styling */
 .contact-section {
   background-color: var(--background-color-2);
