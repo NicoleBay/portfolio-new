@@ -513,12 +513,16 @@ footer a:hover {
   .project {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .project-details {
     margin-right: 0;
     text-align: center;
+  }
+
+  .code {
+    display: none;
   }
 
   .description {
@@ -538,6 +542,7 @@ footer a:hover {
   .btn-link {
     font-size: 18px;
     padding: 8px 16px;
+    margin-top: 0;
   }
 
   /* Contact Section Styling */
@@ -554,5 +559,6 @@ footer a:hover {
   footer p {
     font-size: 12px;
     padding: 5px 0;
+    margin: 0 5px;
   }
 }
