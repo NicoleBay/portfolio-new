@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Project portfolio by Nicole Baylis, a front-end developer based in the UK. Nicole is looking for new opportunities"
+      content="NicoleCodes - a portfolio showcasing Nicole's projects, skills, and contact information. Nicole is based in the UK and is looking for new opportunities"
+    />
+    <meta
+      name="keywords"
+      content="NicoleCodes, coding, projects, portfolio, web development, accessibility"
     />
     <link rel="stylesheet" href="src/styles.css" />
     <script
@@ -19,13 +23,13 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <title>Front-end developer - Nicole Baylis</title>
+    <title>NicoleCodes - Portfolio</title>
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="nav">
       <div class="logo">
-        <a href="#" class="nav-logo"
+        <a href="#" class="nav-logo" alt="Logo"
           >NicoleCodes<span class="full-stop">.</span></a
         >
       </div>
@@ -34,7 +38,7 @@
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-      <ul class="nav-list" id="nav-list">
+      <ul class="nav-list" id="nav-list" aria-label="Main navigation">
         <li class="nav-item"><a href="#welcome-section">Welcome</a></li>
         <li class="nav-item"><a href="#about-section">About</a></li>
         <li class="nav-item"><a href="#projects">Projects</a></li>
@@ -45,33 +49,39 @@
     <!-- WELCOME SECTION -->
     <section id="welcome-section">
       <h1>Hi, I'm Nicole</h1>
-      <h2 id="typewriter" class="typewriter"></h2>
+      <h2 id="typewriter" class="typewriter" aria-live="polite"></h2>
 
       <div class="contact-links">
         <a
           href="https://www.linkedin.com/in/nicole-baylis/"
           target="_blank"
-          title="Linkedin"
           class="btn contact-details"
+          aria-label="Visit Nicole's Linkedin profile"
         >
           <i class="fa-brands fa-linkedin"></i> Linkedin</a
         >
         <a
           href="https://github.com/NicoleBay"
           target="_blank"
-          title="Github"
           class="btn contact-details"
+          aria-label="Visit Nicole's Github profile"
           ><i class="fa-brands fa-github"></i> GitHub</a
         >
         <p class="hero-para">
-          I'm a lifelong leaner <span class="emoji">👩‍💻</span> I love creating
-          <span class="emoji">🎨</span> and I will say Hi to every cat I see
-          <span class="emoji">😻</span>
+          I'm a lifelong leaner
+          <span class="emoji" aria-hidden="true">👩‍💻</span> I love creating
+          <span class="emoji" aria-hidden="true">🎨</span> and I will say hi to
+          every cat I see
+          <span class="emoji" aria-hidden="true">😻</span>
         </p>
         <div class="scroll-text">
           <p>
             Scroll
-            <a href="#about-section" class="scroll-icon">
+            <a
+              href="#about-section"
+              class="scroll-icon"
+              aria-label="Scroll down to About section"
+            >
               <i class="fas fa-chevron-circle-down"></i
             ></a>
           </p>
@@ -147,6 +157,7 @@
               title="Website"
               href="https://nicolecodesai.netlify.app/"
               target="_blank"
+              aria-label="View AI Recipe Generator Website"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -154,6 +165,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/ai-generator"
               target="_blank"
+              aria-label="View AI Recipe Generator GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -163,7 +175,7 @@
           <img
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/892/original/2.png?1719680322"
-            alt="project"
+            alt="Image of AI Recipe Generator project"
           />
         </div>
       </div>
@@ -195,6 +207,7 @@
               title="Website"
               href="https://nicolecodes-react-weather-app.netlify.app/"
               target="_blank"
+              aria-label="View React Weather App Website"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -202,6 +215,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/react-weather-app-project"
               target="_blank"
+              aria-label="View React Weather App GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -212,6 +226,7 @@
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/891/original/1.png?1719680314"
             alt="project"
+            aria-label="Image of React Weather project"
           />
         </div>
       </div>
@@ -238,6 +253,7 @@
               title="Website"
               href="https://world-clock-nicolecodes.netlify.app/"
               target="_blank"
+              aria-label="View World Clock Website"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -245,6 +261,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/world-clock"
               target="_blank"
+              aria-label="View World Clock GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -255,6 +272,7 @@
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/893/original/3.png?1719680328"
             alt="project"
+            aria-label="Image of World Clock project"
           />
         </div>
       </div>
@@ -279,6 +297,7 @@
               title="Website"
               href="https://harrypotterandtheproject.netlify.app/"
               target="_blank"
+              aria-label="View Harry Potter landing page wesbite"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -286,6 +305,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/tribute-project"
               target="_blank"
+              aria-label="View Harry Potter landing page GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -296,6 +316,7 @@
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/895/original/5.png?1719680336"
             alt="project"
+            aria-label="image of Harry Potter landing page project"
           />
         </div>
       </div>
@@ -320,6 +341,7 @@
               title="Website"
               href="https://product-landing-page-project4.netlify.app/"
               target="_blank"
+              aria-label="View Netflix landing page website"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -327,6 +349,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/Netflix-Landing-Page"
               target="_blank"
+              aria-label="View Netflix landing page GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -337,6 +360,7 @@
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/896/original/7.png?1719680342"
             alt="project"
+            aria-label="Image of Netflix landing page project"
           />
         </div>
       </div>
@@ -361,6 +385,7 @@
               title="Website"
               href="https://tokyo-travel.netlify.app/"
               target="_blank"
+              aria-label="View Tokyo landing page website"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -368,6 +393,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/travel-project"
               target="_blank"
+              aria-label="View Tokyo landing page GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -378,6 +404,7 @@
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/894/original/4.png?1719680332"
             alt="project"
+            aria-label="Image of Tokyo landing page project"
           />
         </div>
       </div>
@@ -403,6 +430,7 @@
               title="Website"
               href="https://surveyform-accessibility.netlify.app/"
               target="_blank"
+              aria-label="View responsive form website"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -410,6 +438,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/responsive-form"
               target="_blank"
+              aria-label="View responsive form GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -420,6 +449,7 @@
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/897/original/6.png?1719680355"
             alt="project"
+            aria-label="Image of responsive form project"
           />
         </div>
       </div>
@@ -447,6 +477,7 @@
               title="Website"
               href="https://nicolecodes-portfolio.netlify.app/"
               target="_blank"
+              aria-label="View NicoleCodes first portfolio"
             >
               <i class="fa-solid fa-eye"></i>
             </a>
@@ -454,6 +485,7 @@
               title="GitHub"
               href="https://github.com/NicoleBay/NicoleCodes_Portfolio/tree/main"
               target="_blank"
+              aria-label="View NicoleCodes first portfolio GitHub Repository"
             >
               <i class="fa-brands fa-github"></i>
             </a>
@@ -464,6 +496,7 @@
             class="project-image"
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/898/original/8.png?1719680359"
             alt="project"
+            aria-label="Image of NicoleCodes first portfolio project"
           />
         </div>
       </div>
@@ -487,10 +520,10 @@
             adipiscing elit.
           </p>
           <div class="project-icons">
-            <a title="Website" href="" target="_blank">
+            <a title="Website" href="" target="_blank" aria-label="View PROJECT NAME website">
               <i class="fa-solid fa-eye"></i>
             </a>
-            <a title="GitHub" href="" target="_blank">
+            <a title="GitHub" href="" target="_blank" aria-label="View PROJECT NAME GitHub Repository">
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
@@ -500,19 +533,27 @@
             class="project-image"
             src=""
             alt="project"
+            aria-label="Image of PROJECT NAME project"
           />
         </div>
       </div>-->
       <!-- Link to Github -->
-      <a href="https://github.com/NicoleBay" class="btn-link" target="_blank"
-        >See more on GitHub<i class="fas fa-chevron-right"></i
+      <a
+        href="https://github.com/NicoleBay"
+        class="btn-link"
+        target="_blank"
+        aria-label="Visit Github Repository"
+        >See more on GitHub<i
+          class="fas fa-chevron-right"
+          aria-hidden="true"
+        ></i
       ></a>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section">
       <div class="contact-section-header">
-        <h2>Let's work together...</h2>
+        <h2>Contact Me</h2>
         <p>
           Want to chat, ask for my resume, or see if we can build something
           together? I'd love to hear from you!
@@ -522,7 +563,7 @@
         <a
           href="https://www.linkedin.com/in/nicole-baylis/"
           target="_blank"
-          title="Linkedin"
+          aria-label="Visit Nicole's Linkedin profile"
           class="contact-details contact"
         >
           <i class="fa-brands fa-linkedin"></i> Linkedin</a
@@ -530,13 +571,13 @@
         <a
           href="https://github.com/NicoleBay"
           target="_blank"
-          title="Github"
+          aria-label="Visit Nicole's Github profile"
           class="contact-details contact"
           ><i class="fa-brands fa-github"></i> GitHub</a
         >
         <a
           href="mailto:dev.nicolecodes@outlook.com"
-          title="email"
+          aria-label="Open to send me a message on email"
           class="contact-details contact"
           ><i class="fa-solid fa-envelope"></i> dev.nicolecodes@outlook.com</a
         >
@@ -546,13 +587,14 @@
     <!-- FOOTER SECTION -->
     <footer>
       <p>
-        © Coded by Nicole Baylis,
+        &copy; 2024 NicoleCodes. All Rights Reserved. This portfolio is
         <a
           href="https://github.com/NicoleBay/portfolio-new"
           target="_blank"
-          title="GitHub"
+          title="Visit GitHub Repository"
+          aria-label="Visit Github Repository"
           >open-sourced</a
-        >
+        >.
       </p>
     </footer>
     <script src="src/index.js"></script>

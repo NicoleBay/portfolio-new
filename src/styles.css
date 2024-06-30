@@ -14,6 +14,7 @@ html {
   --secondary-color: #ff65be;
   --accent-color: #feed00;
   --text-color: #ffffff;
+  --background-color-2: #f0f0f0;
   --heading-text: "Oswald", sans-serif;
   --typewriter-text: "Courier Prime", monospace;
   --para-text: "Open Sans", sans-serif;
@@ -201,7 +202,7 @@ p {
 /* About Section Styling */
 
 #about-section {
-  background-color: #f0f0f0;
+  background-color: var(--background-color-2);
   padding: 50px;
   text-align: left;
 }
@@ -222,7 +223,7 @@ p {
 
 .tags li {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: #000000;
   font-size: 16px;
   letter-spacing: 1px;
   padding: 8px 16px;
@@ -347,7 +348,7 @@ p {
 
 /* Contact Section Styling */
 .contact-section {
-  background-color: #f9f9f9;
+  background-color: var(--background-color-2);
   padding: 60px;
   text-align: center;
   color: var(--primary-color);

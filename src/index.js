@@ -1,9 +1,10 @@
-const hamburger = document.getElementById("hamburger");
-const navList = document.getElementById("nav-list");
+const hamburger = document.getElementById("hamburger"); // SELECTS THE ELEMENT WITH ID "hamburger"
+const navList = document.getElementById("nav-list"); // SELECTS THE ELEMENT WITH ID "nav-list"
 
+// ADDS A CLICK EVENT LISTENER TO THE HAMBURGER ELEMENT
 hamburger.addEventListener("click", () => {
-  navList.classList.toggle("active");
-  hamburger.classList.toggle("active");
+  navList.classList.toggle("active"); // TOGGLES THE "active" CLASS ON THE NAVLIST ELEMENT TO OPEN/CLOSE THE NAVIGATION MENU
+  hamburger.classList.toggle("active"); // TOGGLES THE "active" CLASS ON THE HAMBURGER ELEMENT TO CHANGE ITS APPEARANCE
 });
 
 const typewriter = new Typewriter("#typewriter", {
@@ -24,10 +25,10 @@ typewriter
   .typeString("Power Platform app maker")
   .pauseFor(1000)
   .deleteAll()
-  .typeString("UX UI designer")
+  .typeString("Web accessibility advocate")
   .pauseFor(1000)
   .deleteAll()
-  .typeString("from the United Kingdom.")
+  .typeString("From the United Kingdom.")
   .pauseFor(1000)
   .deleteAll()
   .start();
